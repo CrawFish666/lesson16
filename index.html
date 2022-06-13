@@ -1,0 +1,229 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных данных(не отображается)-->
+
+<head>
+	<meta charset="UTF-8">
+	<!--Кодировкаа страницы-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<!--Заголовок страницы в браузере -->
+	<title>Lesson 16</title>
+</head>
+<!--Отображаемое тело страницы-->
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				Я шапка
+
+			</div>
+
+		</header>
+
+
+
+		<main class="main">
+			<div class="apointment">
+				<div class="apointment__container">
+					<div class="apointment__feedback feedback">
+						<div class="feedback__title">Make an appointment</div>
+						<form method="get" action="#" class="feedback__form">
+							<div class="feedback__items">
+								<input class="feedback__input-item" placeholder="Name" name="username" value=""
+									type="text">
+								<input class="feedback__input-item" placeholder="Email" name="email" value=""
+									type="email">
+								<input class="feedback__input-item" placeholder="Phone number" name="phone" value=""
+									type="tel">
+								<input class="feedback__input-item" placeholder="Select Service" name="service" value=""
+									type="text">
+								<textarea class="feedback__textarea-item"
+									placeholder="Tell us about your puppers include his/her name" value="" name="text"
+									id=""></textarea>
+
+							</div>
+							<button class="feedback__button" type="submit">make an appointment</button>
+
+
+
+						</form>
+
+
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="summary">
+				<div class="summary__container">
+					<div class="summary__checkout">
+						<div class="summary__header">
+							<h2 class="summary__title">Summary</h2>
+							<h3 class="summary__subtitle">Estimate Shipping and Tax</h3>
+							<p class="summary__text">Enter your destination to get a shipping estimate.</p>
+						</div>
+						<form class="summary__form form-summary" action="">
+							<div class="form-summary__line">
+								<label class="form-summary__label" for="country">Country</label>
+								<select class="form-summary__select" name="country" id="country">
+									<option disabled selected value="">Please select youre country</option>
+									<option value="Australia">Australia</option>
+									<option value="Africa">Africa</option>
+									<option value="Russia">Russia</option>
+									<option value="Ukraine">Ukraine</option>
+									<option value="USA">USA</option>
+								</select>
+							</div>
+							<div class="form-summary__line">
+								<label for="state" class="form-summary__label">State/Province</label>
+								<input type="text" class="form-summary__input" name="state" value="" id="state"
+									required>
+							</div>
+							<div class="form-summary__line">
+								<label for="zip" class="form-summary__label">Zip/Postal Code</label>
+								<input type="text" class="form-summary__input" name="zip" value="" id="zip" required>
+							</div>
+							<div class="form-summary__line">
+								<label class="form-summary__label" for="rate1">Standard Rate</label>
+								<div class="form-summary__radio">
+									<input class="form-summary__input-radio" type="radio" name="rate" id="rate1">
+									<label class="form-summary__text-label" for="rate1">Price may vary depending on the
+										item/destination. Shop Staff will
+										contact you. $21.00</label>
+								</div>
+
+							</div>
+							<div class="form-summary__line">
+								<label class="form-summary__label" for="rate2">Pickup from store</label>
+								<div class="form-summary__radio">
+									<input class="form-summary__input-radio" type="radio" name="rate" id="rate2">
+									<label class="form-summary__text-label" for="rate2">1234 Street Adress City Address,
+										1234
+										$0.00</label>
+								</div>
+
+							</div>
+
+
+
+
+						</form>
+					</div>
+
+
+
+				</div>
+
+			</div>
+			<div class="customer-login">
+				<div class="customer-login__container2">
+					<!-- тут левая карточка-форма -->
+					<div class="customer-login__registered registered-login-customer">
+						<div class="registered-login-customer__header">
+							<h2 class="registered-login-customer__title">Registered Customers</h2>
+							<p class="registered-login-customer__text">If you have an account, sign in with your email
+								address.</p>
+
+						</div>
+						<form action="#" method="get" class="registered-login-customer__form">
+							<div class="registered-login-customer__line">
+								<label class="registered-login-customer__label" for="">Email <span
+										class="registered-login-customer__red">*</span></label>
+								<input class="registered-login-customer__input" required placeholder="Your Name"
+									type="text" name="email" id="">
+							</div>
+							<div class="registered-login-customer__line">
+								<label class="registered-login-customer__label" for="">Password <span
+										class="registered-login-customer__red">*</span></label>
+								<input class="registered-login-customer__input" required placeholder="Your password"
+									type="password" name="password" id="">
+							</div>
+							<div class="registered-login-customer__footer">
+								<button class="registered-login-customer__button" type="submit">Sign in</button>
+								<a href="" class="registered-login-customer__reset-link">Forgot your password?</a>
+							</div>
+
+
+						</form>
+
+					</div>
+					<!-- тут правая карточка-форма -->
+					<div class="customer-login__new">
+						2
+					</div>
+
+
+
+				</div>
+
+			</div>
+			<!-- <div class="block-1__container">
+				<form method="get" action="#" enctype="multipart/form-data">
+					<input autocomplete="off" maxlength="10" placeholder="Текст" type="text" name="text" value="">
+					<input placeholder="Введите username" type="text" name="username" value="" id="">
+
+					<input type="number" name="number" placeholder="число" value="" id="">
+
+					<input type="tel" name="phone" value="" placeholder="Номер телефона" id="">
+
+					<input type="email" value="" name="email" placeholder="Почта" id="">
+
+					<input type="date" name="" id="">
+
+					<input type="datetime-local" name="" id="">
+
+
+					<input type="checkbox" name="zalupa" id=""> Я залупа?
+
+					<input type="file" name="file" id="">
+					<label for="xx">ХУЙ</label>
+					<input type="password" name="pass" id="xx">
+
+					<input type="radio" name="gender" value="male" id=""> М
+					<input checked type="radio" name="gender" value="female" id=""> Ж
+
+					<textarea name="textarea" id="" cols="30" rows="10"></textarea>
+					<select name="color" id="">
+						<option value="blue">Голубой</option>
+						<option selected value="red">Красный</option>
+						<option value="yellow">Желтый</option>
+					</select>
+					<button type="submit"> Отправить</button>
+				</form>
+			<form class="block-1__form form" action="#" method="get" enctype="multipart/form-data">
+				<div class="form__line">
+					<label for="username" class="form__label">Введите имя</label>
+					<input id="username" type="text" name="username" id="" class="form__input">
+				</div>
+				<button type="submit" class="form__button">Отправить</button>
+
+			</form>
+
+	</div> -->
+
+
+		</main>
+
+
+
+
+
+		<footer class="footer">
+			<div class="footer__container">
+				Я футер
+			</div>
+
+		</footer>
+	</div>
+
+
+
+</body>
+
+</html>
